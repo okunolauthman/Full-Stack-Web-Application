@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Name: OKUNOLA UTHMAN
+    ID: 23811675
+    desc: This program contains the full code to an E-commerce website. It also contains a lot of comments to understanding the proceses
+    date: 5/14/2023
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/main.css">
+
+    <!--Box Icons (Import from Boxicons website / Click usage / import the CSS )-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!--Header-->
+    <div class="menu_bar">
+        <h1 class="logo"> E <span>Commerce</span></h1>
+
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="About.html">About</a></li>
+
+            <!--The List with drop down Menu-->
+            <li> <a href="#">Shop</a>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="Shirts.html">Shirt</a></li>
+                        <li><a href="Jeans.html">Jeans</a></li>
+                        <li><a href="Jackets.html">Jackets</a></li>
+                        <li><a href="Boots.html">Boots</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <!--End-->
+            <li> <a href="Contact.html">Contact</a></li>
+
+            <!--The cart icon has its own page now-->
+            <li> <a href="cart.html"> <i class='bx bxs-cart' id="cart-icon"></i> </a></li>
+
+        </ul>
+    </div>
+
+    <!-- The cart  -->
+    <div class="cart">
+        <br>
+        <h2 class="cart-title"> Your Cart</h2>
+
+        <!--Cart content that javascript will import selected product into -->
+        <div class="cart-content">
+
+        </div>
+
+        <!--Total-->
+        <div class="total">
+            <div class="total-title"> Total</div>
+            <div class="total-price">$0</div>
+        </div>
+
+        <!--Buy button -->
+        <button type="button" class="btn-buy"> Buy Now</button>
+    </div>
+
+    <script src='main.js'></script>
+</body>
+
+</html>

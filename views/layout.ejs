@@ -1,0 +1,59 @@
+<!-- layout Thats all other ejs will be embedded in-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title ejs to allow dynamic setting of the page-->
+    <title>
+        E Commerce
+    </title>
+    <link rel="stylesheet" href="/CSS/main.css">
+
+    <!--Box Icons (Import from Boxicons website / Click usage / import the CSS )-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!--Header-->
+    <div class="menu_bar">
+        <h1 class="logo"> E <span>Commerce</span></h1>
+
+        <ul>
+            <li> <a href="/index">Home</a></li>
+            <li> <a href="/about">About</a></li>
+
+            <!--The List with drop down Menu-->
+            <li> <a href="/products">Shop</a> </li>
+
+            <li> <a href="/Contact">Contact</a></li>
+
+            <!--The cart icon-->
+            <li> <a href="/cart"> <i class='bx bxs-cart' id="cart-icon"></i> </a>
+            </li>
+
+            <% var name="" ,linked="" ; if(flag=="1" ){name="Logoff"; linked="logoff" ;} else {name="Login"; linked="login";} %>
+
+                <!-- Create a list item with an anchor link -->
+                <li id="left">
+                    <!-- Create an anchor link with dynamically set href and link text -->
+                    <a href='<%= linked %>'>
+                        <%= name %>
+                    </a>
+                </li>
+
+        </ul>
+    </div>
+
+        <%-body%>  
+    
+   <!--Front End Javascript-->
+     <script src="/main.js"></script>
+</body>
+
+</html>

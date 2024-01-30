@@ -1,0 +1,89 @@
+/*Import fonts from (Google font website)/ Type fonts name/ click on preference/ click on import/ 
+scroll to read CSS rules to specify family/ copy & paste code */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+/* Import other CSS files */
+@import 'header.css';
+@import 'home.css';
+@import 'shop.css';
+@import 'about.css';
+@import 'cart.css';
+@import 'contact.css';
+@import 'register.css';
+@import 'login.css';
+@import 'ejsfile.css';
+
+:root {
+  /*Intializing CSS Variable*/
+  --color-primary: #0073ff;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+  --main-color: red;
+  --text-color: black;
+  --bg-color: #fff;
+}
+
+/*All element Global styles*/
+* {
+  margin: 0;/*removes any spacing around*/
+  padding: 0;/*removes any spacing within element*/
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  list-style: none;/*removes the default bullet points*/
+}
+
+.container {
+  max-width: 1068px;
+  margin: auto;
+  width: 100%;
+}
+
+/* Breakpoints & Making Responsive for smaller screen*/
+@media (max-width: 768px) {
+  .nav {
+    padding: 15px;
+  }
+
+  .menu_bar {
+    height: 60px;
+    position: absolute;
+    display: inline-table;
+  }
+  .menu_bar ul li {
+    padding: 10px 15px;/* Adjust the padding to make list items closer together */
+    position: relative;
+  }
+
+  .menu_bar ul li a {
+    font-size: 18px;/* Adjust the font size to make text more compact */
+  }
+
+  .dropdown_menu ul li {
+    padding: 10px;/* Adjust the padding to make dropdown items closer together */
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .shop {
+    margin-top: 1rem !important;
+  }
+
+  .logo {
+    font-size: 1.5rem;/* Increase font size for better viewing*/
+  }
+
+  .cart {
+    width: 100%;
+  }
+}

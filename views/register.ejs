@@ -1,0 +1,22 @@
+ <br> <br> <br> <br>
+    <div class="form_settings">
+        <h1>Registration</h1>
+        <form action="register" method="post">
+
+            <label for="register_userid">Enter Username:</label>
+            <input type="text" id="register_userid" name="userid" value="" required>
+
+            <label for="register_userpass">Enter Password:</label>
+            <input type="password" name="password" id="register_userpass" value="" />
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" name="password2" id="register_userpass2" value="" />
+
+            <input class="submit" type="submit" name="choice" value="Submit" />
+            
+            <div> <%-message%> </div>
+            <span>&nbsp;</span>
+                <a href="/login">Login</a>
+        </form>
+    </div>
+

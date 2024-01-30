@@ -1,0 +1,27 @@
+
+<br><br><br>
+    <div id="content">
+        <div class="form_settings">
+            <h1>Login</h1>
+            <form action="login" method="post">
+               
+                <span>Username:</span>
+                <input id="userid" class="contact" type="text" placeholder=" " name="userid"/>
+
+                <span>Password:</span>
+                <input id="userpass" class="contact" type="password" name="password"/>
+                
+                <div>
+                 <%- message%>   
+                </div>
+
+                <span>&nbsp;</span>
+                <input class="submit" type="submit" name="choice" value="Login" />
+
+                <span>&nbsp;</span>
+                <a href="/register">Register</a>
+            </form>
+        </div>
+    </div>
+
+

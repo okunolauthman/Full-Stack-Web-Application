@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <!--Box Icons (Import from Boxicons website / Click usage / import the CSS )-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+  <div class="menu_bar">
+    <h1 class="logo"> E <span>Commerce</span></h1>
+
+    <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="About.html">About</a></li>
+
+        <!--The List with drop down Menu-->
+        <li> <a href="#">Shop</a>
+            <div class="dropdown_menu">
+                <ul>
+                    <li><a href="Shirts.html">Shirt</a></li>
+                    <li><a href="Jeans.html">Jeans</a></li>
+                    <li><a href="Jackets.html">Jackets</a></li>
+                    <li><a href="Boots.html">Boots</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <!--End-->
+        <li> <a href="Contact.html">Contact</a></li>
+
+        <!--The cart icon has a link styling thats from the UL CSS file and the cart page is within the li tag-->
+        <li> <a href="cart.html"> <i class='bx bxs-cart' id="cart-icon"></i> </a>
+        </li>
+
+    </ul>
+</div>
+
+<body><br><br><br><br>
+  <div class="form_settings">
+    <h1>Registration</h1>
+    <form action="#" method="post">
+
+      <label for="your_name">Enter Username:</label>
+      <input type="text" id="your_name" name="your_name" value="" required>
+
+      <label for="your_password">Enter Password:</label>
+      <input type="password" name="your_password" id="your_password" value="" />
+
+      <label for="confirm_password">Confirm Password:</label>
+      <input type="password" name="confirm_password" id="confirm_password" value="" />
+
+      <input class="submit" type="submit" name="contact_submitted" value="Submit" />
+
+    </form>
+  </div>
+
+</body>
+</html>
