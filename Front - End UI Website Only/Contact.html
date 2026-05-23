@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <!--Box Icons (Import from Boxicons website / Click usage / import the CSS )-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!--Header-->
+    <div class="menu_bar">
+        <h1 class="logo"> E <span>Commerce</span></h1>
+
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="About.html">About</a></li>
+
+            <!--The List with drop down Menu-->
+            <li> <a href="#">Shop</a>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="Shirts.html">Shirt</a></li>
+                        <li><a href="Jeans.html">Jeans</a></li>
+                        <li><a href="Jackets.html">Jackets</a></li>
+                        <li><a href="Boots.html">Boots</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <!--End-->
+            <li> <a href="Contact.html">Contact</a></li>
+
+            <!--The cart icon has a link styling thats from the UL CSS file and the cart page is within the li tag-->
+            <li> <a href="cart.html"> <i class='bx bxs-cart' id="cart-icon"></i> </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <body><br><br><br><br>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form><br><br>
+        </div>
+
+        <section class="container">
+            <a href="mailto:okunolauthman@email.com">Send Email to the CEO</a>
+            <br><br>
+            <hr> &copy; Copyright Mr. Okunola Uthman
+        </section>
+    </body>
+
+</html>

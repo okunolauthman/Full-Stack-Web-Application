@@ -1,0 +1,118 @@
+/* A slide of  images*/
+.slides_container {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+
+.slides_container>div {
+    /*A parent to child way of styling. only the div under the slides container class is styled*/
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.24, .4, .45, 1.4);
+    background-size: cover;
+    height: 82vh;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.slides_container>div:hover {
+    flex: 5;
+}
+
+.slides-txt {
+    font-size: 45px;
+    color: beige;
+    /*End of Slides styling*/
+}
+
+
+/* Home Page Card styling */
+article {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+div.card {
+    background: #000046;
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    background: linear-gradient(to right, #1CB5E0, #000046);
+    border-radius: 24px;
+    padding: 24px;/*spacing inside all element*/
+    margin: 24px 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 0 0 0 rgba(204, 204, 204, 0.3);
+}
+
+div.card .text-content a {
+    /* Border style and color */
+    border: 3px solid #f2f2f2;
+    color: #ffffff;
+    /* Align the link to the start of the flex container (left side) */
+    align-self: flex-start;
+    text-decoration: none; /* Remove default underline for links */
+    padding: 16px 32px;
+    border-radius: 12px;/* Border radius to create rounded corners */
+    transition: 400ms all;
+}
+
+div.card .text-content a:hover {
+    background: #051c5e;
+    color: white;
+  }
+
+div.card .text-content {
+    width: 100%;
+}
+
+div.card .text-content h3 {
+    font-size: 1.5em;
+    max-width: none;
+}
+
+div.card .text-content p {
+    margin: 12px 0;
+}
+
+div.card .text-content a {
+    padding: 12px 24px;
+}
+
+div.card .visual {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 24px;
+    margin-top: 12px; /* Add a margin to separate the image and text */
+}
+
+/* Media Query for Mobile */
+@media screen and (min-width: 640px) {
+    div.card {
+        flex-direction: row;
+        align-items: center; /* Center items vertically */
+        box-shadow: 5px 0 0 0 rgba(204, 204, 204, 0.3), -5px 0 0 0 rgba(204, 204, 204, 0.3), 0 5px 0 0 rgba(204, 204, 204, 0.3);
+    }
+
+    div.card .text-content {
+        flex: 1; /* Take remaining width */
+        margin-left: 24px; /* Add margin to separate text and image on larger screens */
+    }
+
+    div.card .visual {
+        width: 240px;
+        max-width: none; /* Allow the image to have its original width */
+        height: 100%;
+        margin-top: 0; /* Reset margin for larger screens */
+    }
+}
+

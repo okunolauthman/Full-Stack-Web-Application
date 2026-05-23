@@ -1,0 +1,67 @@
+/*Shop to Products styling*/
+
+section {
+  /* Adds spacing the tag: 4 units to the top,
+   none on the sides, and 3 units at the bottom. */
+  padding: 4rem 0 3rem;
+}
+
+.section-Title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;/* creates space between it and next element below it. */
+}
+
+.shop-content {
+  display: grid;/*element laid out as a grid, with rows & columns.*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));/* The "repeat" function is used to repeat value "auto-fit" and "minmax. The "auto-fit" function automatically adjust to fit the available space, while the "minmax(300px, auto)" function sets a minimum width of 300px and allows the columns to expand to a maximum width of "auto"*/
+  gap: 1.5rem;/* Creates a space between grid items */
+}
+
+.product-box {
+  position: relative;/* Properly position the box to fit the screen*/
+}
+
+.product-box:hover {
+  /* hover styling of mouse on products*/
+  padding: 10px;
+  border: 1px solid var(--text-color);
+  transition: 0.4s;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  /* image tag styling to be relative to the screen */
+  width: 100%;
+}
+
+.product-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: 500;
+}
+
+/*Styling of add to cart logo in the product */
+.add-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--text-color);
+  color: var(--bg-color);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.add-cart:hover {
+  background: red;
+}
